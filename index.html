@@ -113,14 +113,34 @@
         <h2>Contact Me</h2>
         <p>If you want to connect with me, please fill out the form below 💬</p>
 
-        <form id="contactForm">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <input type="text" id="phone" placeholder="Phone Number">
-            <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+      <form action="https://formspree.io/f/mzznnjjn" method="POST">
 
-            <button type="submit">Send Message 🚀</button>
-        </form>
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email address</label>
+                        <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea name="message" class="form-control" rows="4" placeholder="Enter your message"
+                            required></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Phone Number</label>
+                        <input type="tel" name="phone" class="form-control" placeholder="Enter your phone number">
+                    </div>
+
+                    <button type="submit" class="btn btn-light px-4">
+                        Submit
+                    </button>
+
+                </form>
     </section>
 
     </div>
